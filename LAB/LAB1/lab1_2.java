@@ -1,3 +1,8 @@
+/*
+Project : í‚¤ë³´ë“œë¡œë¶€í„° ì •ìˆ˜ 3ê°œë¥¼ ì…ë ¥ ë°›ê³ , ì´ 3ê°œì˜ ìˆ˜ë¡œ ì‚¼ê°í˜•ì„ ë§Œë“¤ ìˆ˜ ìˆëŠ”ì§€ íŒë³„í•˜ì‹œì˜¤. ë§Œì•½ ì‚¼ê°í˜•ì´ êµ¬ì„±ëœë‹¤ë©´, ë„“ì´ë¥¼ ê³„ì‚°í•˜ì—¬ ì¶œë ¥í•˜ì‹œì˜¤.
+Author: Changâ€Hyeop LEE
+Date of last update: Jan. 17, 2022
+*/
 package LAB1;
 import java.lang.Math;
 import java.util.Scanner; 
@@ -13,7 +18,7 @@ public class lab1_2 {
 			 area = Math.sqrt((s*(s-a)*(s-b)*(s-c)));
 		}
 		else {
-			System.out.println("»ï°¢Çü ±¸¼ºÀ» ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì‚¼ê°í˜• êµ¬ì„±ì„ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		return area;
 	}
@@ -30,19 +35,19 @@ public class lab1_2 {
 			 area = Math.sqrt((s*(s-a)*(s-b)*(s-c)));
 		}
 		else {
-			System.out.println("»ï°¢Çü ±¸¼ºÀ» ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì‚¼ê°í˜• êµ¬ì„±ì„ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		return area;
 	}
 	public static void main(String[] arg) {
 		double area = 0.0;
 		Scanner in = new Scanner(System.in);
-		System.out.print("»ï°¢Çü 3º¯ÀÇ ±æÀÌ¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+		System.out.print("ì‚¼ê°í˜• 3ë³€ì˜ ê¸¸ì´ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 		area = cal_int(in);
-		System.out.printf("»ï°¢Çü ³ĞÀÌ : %f\n", area);
-		System.out.print("»ï°¢Çü 3º¯ÀÇ ±æÀÌ¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+		System.out.printf("ì‚¼ê°í˜• ë„“ì´ : %f\n", area);
+		System.out.print("ì‚¼ê°í˜• 3ë³€ì˜ ê¸¸ì´ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 		area = cal_str(in);
-		System.out.printf("»ï°¢Çü ³ĞÀÌ : %f\n", area);
+		System.out.printf("ì‚¼ê°í˜• ë„“ì´ : %f\n", area);
 	}
 
 }
