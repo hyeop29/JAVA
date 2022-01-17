@@ -1,3 +1,8 @@
+/*
+Project : 키보드에서 영문자를 입력 받아 소문자이면 대문자로, 대문자이면 소문자로 변환하여 출력하는 프로그램을 작성하시오.
+Author: Chang‐Hyeop LEE
+Date of last update: Jan. 17, 2022
+*/
 package LAB1;
 import java.util.Scanner;
 
