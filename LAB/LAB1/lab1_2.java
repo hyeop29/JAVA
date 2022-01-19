@@ -34,7 +34,7 @@ public class lab1_2 {
 			System.out.println("삼각형 구성을 할 수 없습니다.");
 		}
 		else {
-			s = (a+b+c)/2;
+			s = (a+b+c)/2.0;
 			area = Math.sqrt((s*(s-a)*(s-b)*(s-c)));
 		}
 		return area;
