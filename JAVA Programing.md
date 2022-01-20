@@ -101,3 +101,20 @@ public class EX {
   - final 변수 : 더 이상 값이 변할 수 없는 변수
     + 상수 선언할 때 사용  ex) public static final double PI = 3.141592653589793;
     + 상수는 선언 시 초기 값 지정하고, 실행 중 변경 불가
+
+
+## 인터페이스
+  -JAVA의 인터페이스
+    + 극단적으로 '형식'만 남긴 클래스 : 껍데기만 남은 클래스
+    + 멤버 변수 정의 불가 : 상수는 정의 가능
+    + 모든 메소드가 추상 메소드
+  - 인터페이스 선언 : interface 키워드로 선언
+  ```java
+  interface Clock { 
+    public static final int ONEDAY = 24 ;
+    abstract public int getMinute() ;
+    int getHour() ;  //abstract public 생략
+  }
+  ```
+  
+  - 특  
