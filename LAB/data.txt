@@ -1,0 +1,7 @@
+20169342, Johnny Depp, 38
+20179234, Angelina Jolie, 47
+20159345, Ariana Grande, 79
+20179142, Justin Bieber, 100
+21812248, 이창협, 100
+20169132, no name, -1
+20159531, Taylor Swift, 90
