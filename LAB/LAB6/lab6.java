@@ -40,7 +40,7 @@ class Emplyoee{
     String getID(){
         return this.ID;
     }
-    public String toString()  //여기서 public을 앞에 해주는 이유: toString은 본래 최상의 class의 offer의 메소드이다. offer 메소드가 public 임으로, 선언에 public 사용
+    public String toString()  //여기서 public을 앞에 해주는 이유: toString은 본래 최상의 class의 offer의 메소드이다. offer class가 public 임으로, 선언에 public 사용
     {
         return name + "\t" + salary + "\t" + ID;
     }
