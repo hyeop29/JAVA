@@ -9,7 +9,7 @@ class MyFrame extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  // Frame의 x 표시를 누르면 code 종료
         //setSize(500, 500);
 
-        Container cp = getContentPane();
+        Container cp = getContentPane(); //
         cp.setLayout(null);
 
         cp.add(new ToolPanel());
@@ -27,7 +27,7 @@ class MyFrame extends JFrame{
 
             setLayout(new GridLayout(3,1));
             add(new JButton("원"));
-            add(new JLabel(new ImageIcon("D:/자바 특강 2022.01/src/Test/test.jpg")));  // Label에 그림 넣는 법
+            add(new JButton(new ImageIcon("D:/자바 특강 2022.01/src/Test/test.jpg")));  // Label에 그림 넣는 법
             add(new TextField(10));
         }
     }
@@ -35,6 +35,15 @@ class MyFrame extends JFrame{
         DrawPanel(){
             setBackground(Color.YELLOW);
             setBounds(100,0,500,500);
+        }
+        public void paintComponent(Graphics g){
+            super.paintComponent(g);
+            Font f = new Font("Jokerman", Font.ITALIC, 80);
+
+            g.setColor(Color.BLUE);
+            g.setFont(f);
+            g.drawString("Hello Java",50,250);
+
         }
     }
 }
