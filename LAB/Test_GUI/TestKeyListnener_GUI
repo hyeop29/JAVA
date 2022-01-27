@@ -1,0 +1,40 @@
+package Test;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class MyApp extends JFrame {
+    MyApp() {
+        setTitle("My First GUI App");   // Tittle 지정
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Frame의 x 누르면 code 종료
+        setSize(500,500);
+
+        Container cp = getContentPane();  // ContentPane을 받아온다
+        cp.setLayout(new FlowLayout()); // ContentPane의 Layout Manager를 FlowLayout 설정 , 위치를 설정해줄 수 있게 하는 부분
+
+        JButton btn1 = new JButton("First Button");
+        JButton btn2 = new JButton("Second Button");
+
+        btn1.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode() == KeyEvent.VK_UP){
+                    btn1.setBackground(Color.BLUE);
+                }
+            }
+        });
+        btn2.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode() == KeyEvent.VK_DOWN){
+                    btn2.setBackground(Color.BLACK);
+                }
+            }
+        });
+        cp.add(btn1); // 생성한 Button을 ContentPane에 추가
+        cp.add(btn2);
+    }
+
+    public static void main(String[]  args) {
+        new MyApp().setVisible(true);
+    }
+}
