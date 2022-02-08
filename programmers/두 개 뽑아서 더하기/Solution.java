@@ -4,7 +4,6 @@ Project : 두 개 뽑아서 더하기
 Author: Chang‐Hyeop LEE
 Date of last update: Feb. 08, 2022
 */
-package 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
